@@ -1,6 +1,10 @@
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { imagePath } from '../shared/app.const';
+import {
+  aosImageDuration,
+  aosImageOffset,
+  imagePath,
+} from '../shared/app.const';
 import * as AOS from 'aos';
 
 @Component({
@@ -18,8 +22,8 @@ export class AboutMeComponent implements OnInit {
   public ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({
-        duration: 1300,
-        offset: 120,
+        duration: aosImageDuration,
+        offset: aosImageOffset,
       });
     }
   }

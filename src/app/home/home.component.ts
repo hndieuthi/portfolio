@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '../header/header.component';
+import { RouterLink } from '@angular/router';
+import { imagePath } from '../shared/app.const';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent],
+  imports: [CommonModule, RouterLink],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.less'
+  styleUrl: './home.component.less',
 })
 export class HomeComponent {
+  public imagePath = imagePath;
 }
