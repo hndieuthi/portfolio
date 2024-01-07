@@ -10,13 +10,13 @@ import * as AOS from 'aos';
 import { SeeNextProjectComponent } from '../see-next-project/see-next-project.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-zalo-connect',
   standalone: true,
   imports: [CommonModule, RouterLink, SeeNextProjectComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.less',
+  templateUrl: './zalo-connect.component.html',
+  styleUrl: './zalo-connect.component.less',
 })
-export class HomeComponent {
+export class ZaloConnectComponent {
   public imagePath = imagePath;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}

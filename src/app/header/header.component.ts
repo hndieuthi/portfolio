@@ -7,7 +7,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.less'
+  styleUrl: './header.component.less',
 })
-export class HeaderComponent {
-}
+export class HeaderComponent {}

@@ -1,4 +1,4 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, Input, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import {
@@ -7,16 +7,16 @@ import {
   imagePath,
 } from '../shared/app.const';
 import * as AOS from 'aos';
-import { SeeNextProjectComponent } from '../see-next-project/see-next-project.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-see-next-project',
   standalone: true,
-  imports: [CommonModule, RouterLink, SeeNextProjectComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.less',
+  imports: [CommonModule, RouterLink],
+  templateUrl: './see-next-project.component.html',
+  styleUrl: './see-next-project.component.less',
 })
-export class HomeComponent {
+export class SeeNextProjectComponent {
+  @Input() content = '';
   public imagePath = imagePath;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
