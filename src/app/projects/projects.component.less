@@ -15,16 +15,24 @@ img {
     font-size: 3rem;
   }
 
-  .flex-center {
+  .flex {
     display: flex;
+  }
+
+  .center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .align-center {
     align-items: center;
   }
 
-  .wrapper1 {
-    display: block;
+  .column {
+    flex-direction: column;
   }
 
-  .wrapper2 {
+  .wrapper1 {
     display: block;
   }
 
@@ -37,6 +45,16 @@ img {
   }
 
   @media (min-width: 1250px) {
+    .projects {
+      padding: 70px 220px;
+      font-family: "Plus Jakarta Sans";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      max-width: auto;
+    }
+
     .wrapper1 {
       display: flex;
     }
