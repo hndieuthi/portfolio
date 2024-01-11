@@ -4,6 +4,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ZaloConnectComponent } from './zalo-connect/zalo-connect.component';
 import { BubbleChatComponent } from './bubble-chat/bubble-chat.component';
+import { RegreenComponent } from './regreen/regreen.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +36,10 @@ export const routes: Routes = [
     path: 'bubble-chat',
     component: BubbleChatComponent,
     title: 'Redesign voice bubble chat',
+  },
+  {
+    path: 'regreen',
+    component: RegreenComponent,
+    title: 'Regreen',
   },
 ];

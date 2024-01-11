@@ -31,7 +31,7 @@ export class ProjectsComponent {
         offset: aosImageOffset,
       });
     }
-    //this.showTypingTexts();
+    // this.showTypingTexts();
   }
 
   public showTypingTexts() {

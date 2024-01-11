@@ -10,28 +10,6 @@ img {
   margin: 70px 70px 0 70px;
   font-family: "Plus Jakarta Sans";
 
-  .title {
-    font-family: "Syne";
-    font-size: 3rem;
-  }
-
-  .flex {
-    display: flex;
-  }
-
-  .center {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .align-center {
-    align-items: center;
-  }
-
-  .column {
-    flex-direction: column;
-  }
-
   .wrapper1 {
     display: block;
   }
@@ -101,18 +79,18 @@ img {
 
 .black {
   background-color: @GR_darkgreen_2;
-  padding: 80px;
   font-size: 2rem;
+  padding: 80px;
 
   .mt-100 {
     > .item {
-      padding: 0 50px 50px 0;
+      padding: 0 20px 20px 0;
     }
   }
 
   .mt-50 {
     > .item {
-      padding: 0 0 50px 0;
+      padding: 0 0 20px 0;
     }
   }
 
@@ -127,9 +105,47 @@ img {
     color: white;
   }
 
+  .large-size {
+    font-size: 3rem;
+  }
+
   @media (min-width: 1250px) {
     .wrapper1 {
       display: flex;
     }
+
+    .mt-100 {
+      > .item {
+        padding: 0 50px 50px 0;
+      }
+    }
+
+    .mt-50 {
+      > .item {
+        padding: 0 0 50px 0;
+      }
+    }
   }
+}
+
+.title {
+  font-family: "Syne";
+  font-size: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
 }
