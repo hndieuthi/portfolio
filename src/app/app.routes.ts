@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ZaloConnectComponent } from './zalo-connect/zalo-connect.component';
 import { BubbleChatComponent } from './bubble-chat/bubble-chat.component';
 import { RegreenComponent } from './regreen/regreen.component';
+import { FloristComponent } from './florist/florist.component';
 
 export const routes: Routes = [
   {
@@ -41,5 +42,10 @@ export const routes: Routes = [
     path: 'regreen',
     component: RegreenComponent,
     title: 'Regreen',
+  },
+  {
+    path: 'florist',
+    component: FloristComponent,
+    title: 'Florist',
   },
 ];
