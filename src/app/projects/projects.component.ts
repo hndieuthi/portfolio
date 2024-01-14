@@ -1,9 +1,11 @@
 import {
+  AfterViewInit,
   Component,
   Inject,
   OnDestroy,
   OnInit,
   PLATFORM_ID,
+  ViewChild,
 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
@@ -14,8 +16,9 @@ import {
 } from '../shared/app.const';
 import * as AOS from 'aos';
 import { RouterLink } from '@angular/router';
-import { merge, repeat, timer } from 'rxjs';
 import { ShareService } from '../shared/share.service';
+// @ts-ignore
+import Typewriter from 'typewriter-effect/dist/core';
 
 @Component({
   selector: 'app-projects',
@@ -24,10 +27,11 @@ import { ShareService } from '../shared/share.service';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.less',
 })
-export class ProjectsComponent implements OnInit, OnDestroy {
+export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   public imagePath = imagePath;
   public typingText = typingTexts[0];
   public visible = true;
+  @ViewChild('tw') typewriterElement: any;
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -42,7 +46,10 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       });
     }
     this.shareService.activeUrl$.next('projects');
-    // this.showTypingTexts();
+  }
+
+  public ngAfterViewInit(): void {
+    this.showTypingTexts();
   }
 
   public ngOnDestroy(): void {
@@ -50,20 +57,12 @@ export class ProjectsComponent implements OnInit, OnDestroy {
   }
 
   public showTypingTexts() {
-    let i = 0;
-    merge(timer(4000))
-      .pipe(repeat({ delay: 1000 }))
-      .subscribe({
-        next: () => {
-          if (isPlatformBrowser(this.platformId)) {
-            AOS.refreshHard();
-          }
-          this.visible = false;
-          i++;
-          if (i >= typingTexts.length) i = 0;
-          this.typingText = typingTexts[i];
-          setTimeout(() => (this.visible = true));
-        },
-      });
+    const target = this.typewriterElement.nativeElement;
+    const writer = new Typewriter(target, {
+      strings: typingTexts,
+      autoStart: true,
+      cursor: '',
+      loop: true,
+    });
   }
 }
