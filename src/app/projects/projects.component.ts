@@ -1,4 +1,10 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  Inject,
+  OnDestroy,
+  OnInit,
+  PLATFORM_ID,
+} from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
   aosImageDuration,
@@ -9,6 +15,7 @@ import {
 import * as AOS from 'aos';
 import { RouterLink } from '@angular/router';
 import { merge, repeat, timer } from 'rxjs';
+import { ShareService } from '../shared/share.service';
 
 @Component({
   selector: 'app-projects',
@@ -17,12 +24,15 @@ import { merge, repeat, timer } from 'rxjs';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.less',
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit, OnDestroy {
   public imagePath = imagePath;
   public typingText = typingTexts[0];
   public visible = true;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private shareService: ShareService
+  ) {}
 
   public ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -31,7 +41,12 @@ export class ProjectsComponent {
         offset: aosImageOffset,
       });
     }
-    // this.showTypingTexts();
+    this.shareService.activeUrl$.next('projects');
+    this.showTypingTexts();
+  }
+
+  public ngOnDestroy(): void {
+    this.shareService.ngOnDestroy();
   }
 
   public showTypingTexts() {

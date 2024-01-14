@@ -48,4 +48,5 @@ export const routes: Routes = [
     component: FloristComponent,
     title: 'Florist',
   },
+  { path: '**', redirectTo: 'home' },
 ];

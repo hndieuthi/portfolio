@@ -1,7 +1,14 @@
 <div class="header">
   <div [routerLink]="['/home']" class="name">Thi Ho</div>
   <div class="items">
-    <span [routerLink]="['/projects']" class="mr-20">Projects</span>
-    <span [routerLink]="['/about-me']">About me</span>
+    <span
+      [routerLink]="['/projects']"
+      [ngClass]="{ bold: projectsIsActiveUrl }"
+      class="mr-20"
+      >Projects</span
+    >
+    <span [routerLink]="['/about-me']" [ngClass]="{ bold: aboutMeIsActiveUrl }"
+      >About me</span
+    >
   </div>
 </div>

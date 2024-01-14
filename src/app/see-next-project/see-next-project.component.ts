@@ -18,7 +18,9 @@ import * as AOS from 'aos';
 export class SeeNextProjectComponent {
   @Input() content = '';
   @Input() subContent = '';
+  @Input() redirectTo = '';
   public imagePath = imagePath;
+  public test = '/zalo-connect';
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 

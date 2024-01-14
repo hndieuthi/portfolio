@@ -3,17 +3,32 @@
 
 .header {
   font-family: "Plus Jakarta Sans";
-  padding: 10px 60px;
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
 
   .name {
     color: @VE_green;
+    cursor: pointer;
   }
 
   .items {
     > * {
       cursor: pointer;
     }
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1250px) {
+  .bold {
+    font-weight: 100;
+  }
+
+  .header {
+    padding: 10px 100px;
   }
 }
