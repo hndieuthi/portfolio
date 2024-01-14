@@ -1,35 +1,24 @@
 <div class="projects">
-  <br />
-  <br />
-  <br />
-  <br />
-  <div *ngIf="visible" class="flex align-center">
-    <div class="title">Design for</div>
-    <div class="typing-box title">
-      <div class="typing-effect"><span class="tw" #tw> </span></div>
+  <div class="header">
+    <div *ngIf="visible" class="header-wrapper align-center">
+      <div class="title">Design for</div>
+      <div class="typing-box title">
+        <div class="typing-effect"><span class="tw" #tw> </span></div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div data-aos="fade-right" class="introduction">
+      I am <b>Thi Ho</b>, a product designer who is constantly <br />
+      seeking out great challenges, bridging the <br />
+      gap between technology and humans
     </div>
   </div>
-  <br />
-  <br />
-  <div data-aos="fade-right">
-    I am <b>Thi Ho</b>, a product designer who is constantly <br />
-    seeking out great challenges, bridging the <br />
-    gap between technology and humans
-  </div>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+
   <div class="flex center column">
     <div class="wrapper1 mt-70">
       <div>
-        <div class="item">
+        <div class="item cursor-pointer" [routerLink]="['/bubble-chat']">
           <img src="{{ imagePath }}/projects1.png" data-aos="fade-up" />
         </div>
         <div class="item">
@@ -37,26 +26,19 @@
         </div>
       </div>
       <div>
-        <div class="item">
+        <div class="item cursor-pointer" [routerLink]="['/zalo-chat']">
           <img src="{{ imagePath }}/projects4.png" data-aos="fade-up" />
         </div>
-        <div class="item">
+        <div class="item cursor-pointer" [routerLink]="['/zalo-connect']">
           <img src="{{ imagePath }}/projects3.png" data-aos="fade-up" />
         </div>
       </div>
     </div>
-    <div class="item">
+    <div class="item cursor-pointer" [routerLink]="['/regreen']">
       <img src="{{ imagePath }}/projects5.png" data-aos="fade-up" />
     </div>
   </div>
 </div>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
 <div class="black flex center column">
   <div>
     <div class="white-text large-size">From the archives</div>

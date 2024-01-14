@@ -3,7 +3,7 @@
     <img src="{{ imagePath }}/home1.png" />
   </div>
   <div class="wrapper flex center column">
-    <div class="project-overview mt-100">
+    <div class="project-overview mt-240">
       <div class="flex align-center">
         <span>
           <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
@@ -46,7 +46,7 @@
             <div>The default 6 emojis</div>
           </div>
           <div class="mb-10 g-col-12 g-col-md-4">
-            <img src="{{ imagePath }}/home3.png" />
+            <img src="{{ imagePath }}/home4.gif" />
             <div class="mt-5 mb-5"><b>Multiple-time reaction</b></div>
             <div>
               Users can react multiple times to one bubble chat and with
@@ -61,17 +61,18 @@
         </div>
       </div>
     </div>
-    <div class="research mt-100">
+    <div class="research mt-320">
       <div class="flex align-center">
         <span>
           <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
         </span>
         <span class="title">Research</span>
       </div>
-      <h4>
+      <div class="mt-80"></div>
+      <p class="h3">
         Through current users data and user interviews, we focused on answering
         these questions
-      </h4>
+      </p>
       <ul>
         <li>
           How users navigate through reaction features: react, remove, see
@@ -81,9 +82,17 @@
         <li>How do users feel about Zalo Emojis design</li>
         <li>How the current feature serve their purpose</li>
       </ul>
-      <img class="mt-40" src="{{ imagePath }}/home8.png" />
-      <h2 class="mt-40">Some insights</h2>
-      <h2 class="blue-main">
+      <div class="bg-gradient flex center">
+        <img height="480" width="222" src="{{ imagePath }}/home-default.gif" />
+        <img
+          height="480"
+          width="222"
+          src="{{ imagePath }}/home-live-emoji.gif"
+        />
+        <img height="480" width="222" src="{{ imagePath }}/home-remove.gif" />
+      </div>
+      <h2 class="mt-80 h3">Some insights</h2>
+      <h2 class="blue-main h3">
         1. There is significant difference in how young users and older users
         use reaction
       </h2>
@@ -101,7 +110,8 @@
           <img src="{{ imagePath }}/home10.png" />
         </div>
       </div>
-      <h2 class="blue-main">
+      <div class="mt-80"></div>
+      <h2 class="blue-main h3">
         2. Users only use a small fix number of emojis to react
       </h2>
       <p>
@@ -120,7 +130,7 @@
       <div class="mt-30">
         <img src="{{ imagePath }}/home6.png" />
       </div>
-      <h2 class="blue-main">3. Users have trouble removing reactions</h2>
+      <h2 class="blue-main h3">3. Users have trouble removing reactions</h2>
       <div class="grid center">
         <div class="g-col-12 g-col-md-4">
           <img src="{{ imagePath }}/home7.png" />
@@ -200,7 +210,7 @@
         </div>
       </div>
     </div>
-    <div class="final-solution mt-100">
+    <div class="final-solution mt-320">
       <div class="flex align-center">
         <span>
           <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
@@ -227,7 +237,7 @@
         sheet so that users can have enough information and context to remove
         unwanted reaction.
       </p>
-      <br />
+      <div class="mt-80"></div>
       <h2 class="blue-main">2. Easy customization for reaction panel</h2>
       <img src="{{ imagePath }}/home15.png" />
       <br />
@@ -237,7 +247,7 @@
         Sometimes they hit dead end, sometimes they succeed with a little bit of
         confusion.
       </p>
-      <br />
+      <div class="mt-80"></div>
       <h3>How did we utilize this customization process?</h3>
       <img src="{{ imagePath }}/home2.gif" />
       <br />
@@ -260,6 +270,7 @@
     </div>
   </div>
 </div>
+<div class="mt-160"></div>
 <app-see-next-project
   content="Building a new e-commerce platform for 5M sellers with Zalo Connect"
   redirectTo="/zalo-connect"
