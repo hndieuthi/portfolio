@@ -42,7 +42,7 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       });
     }
     this.shareService.activeUrl$.next('projects');
-    this.showTypingTexts();
+    // this.showTypingTexts();
   }
 
   public ngOnDestroy(): void {
