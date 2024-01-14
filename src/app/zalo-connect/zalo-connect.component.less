@@ -1,6 +1,7 @@
 @import "../../styles/bootstrap.less";
 @import "../../styles/color.less";
 @import "../../styles/grid.less";
+@import "../../styles/global.less";
 
 img {
   max-width: 100%;
@@ -11,9 +12,11 @@ img {
   padding: 50px 10px;
   font-family: "Plus Jakarta Sans";
   max-width: auto;
+  font-size: 20px;
+  line-height: 160%;
 
   .wrapper {
-    max-width: 70%;
+    width: 70%;
   }
 
   .grey {
@@ -31,6 +34,12 @@ img {
 
   ul li {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: 1250px) {
+    .wrapper {
+      width: 1024px;
+    }
   }
 }
 
@@ -66,12 +75,6 @@ img {
 }
 
 @media (min-width: 1250px) {
-  .title {
-    font-size: 3rem;
-    margin-left: 30px;
-    font-family: "Syne";
-  }
-
   .zalo-connect {
     padding: 70px 220px;
     font-family: "Plus Jakarta Sans";
@@ -80,5 +83,12 @@ img {
     align-items: center;
     flex-direction: column;
     max-width: auto;
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .title {
+    font-size: 64px;
+    line-height: 130%;
   }
 }

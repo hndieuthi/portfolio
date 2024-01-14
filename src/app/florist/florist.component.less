@@ -1,10 +1,11 @@
 @import "../../styles/bootstrap.less";
 @import "../../styles/color.less";
 @import "../../styles/grid.less";
+@import "../../styles/global.less";
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .florist {
@@ -105,9 +106,15 @@ img {
   font-weight: bold;
 }
 
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 1250px) {
   .title {
-    font-size: 3rem;
+    font-size: 64px;
+    line-height: 130%;
     margin-left: 30px;
     font-family: "Syne";
   }
@@ -120,5 +127,15 @@ img {
     align-items: center;
     flex-direction: column;
     max-width: auto;
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .wrapper {
+    width: 1024px;
+  }
+
+  .wrapper2 {
+    width: 1024px;
   }
 }

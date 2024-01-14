@@ -2,18 +2,47 @@
 
 .footer {
   background-color: @GR_darkgreen;
-  height: 180px;
-  padding: 90px 70px;
+  height: 300px;
+  padding: 130px 85px;
   color: @GR_white;
   font-family: "Plus Jakarta Sans";
 
+  .small-title {
+    line-height: 160%;
+    font-size: 36px;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
   .title {
-    font-size: 3rem;
+    font-size: 50px;
   }
 
   .small-text {
     margin-top: 100px;
     float: right;
-    font-size: 1rem;
+    font-size: 20px;
+    line-height: 160%;
+  }
+
+  .dot {
+    color: @GR_white;
+    font-size: 20px;
+    margin: 20px 20px;
+  }
+
+  @media (min-width: 1250px) {
+    .title {
+      font-size: 80px;
+      line-height: 130%;
+    }
+
+    .dot {
+      color: @GR_white;
+      font-size: 24px;
+      margin: 0 20px;
+    }
   }
 }

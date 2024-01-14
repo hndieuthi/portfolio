@@ -7,10 +7,10 @@ img {
 }
 
 .projects {
-  margin: 0 auto;
+  padding: 0 80px;
+  margin: 200px auto 140px auto;
   font-family: "Plus Jakarta Sans";
   max-width: max-content;
-  margin-top: 70px;
 
   .wrapper1 {
     display: block;
@@ -36,6 +36,10 @@ img {
     }
 
     .wrapper1 {
+      display: flex;
+    }
+
+    .header-wrapper {
       display: flex;
     }
   }
@@ -108,7 +112,8 @@ img {
   }
 
   .large-size {
-    font-size: 3rem;
+    font-size: 64px;
+    line-height: 130%;
   }
 
   @media (min-width: 1250px) {
@@ -127,16 +132,12 @@ img {
         padding: 0 0 50px 0;
       }
     }
-
-    .title {
-      font-size: 3rem;
-    }
   }
 }
 
 .title {
   font-family: "Syne";
-  font-size: 2rem;
+  font-size: 90px;
 }
 
 .flex {
@@ -156,9 +157,18 @@ img {
   flex-direction: column;
 }
 
+.introduction {
+  font-size: 27px;
+  line-height: 170%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @media (min-width: 1250px) {
   .title {
-    font-size: 3rem;
+    font-size: 112px;
     font-family: "Syne";
   }
 
@@ -169,5 +179,10 @@ img {
     height: fit-content;
     padding: 15px;
     min-width: 220px;
+  }
+
+  .header {
+    height: 70vh;
+    margin-left: 10px;
   }
 }

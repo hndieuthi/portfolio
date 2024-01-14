@@ -1,6 +1,7 @@
 @import "../../styles/bootstrap.less";
 @import "../../styles/color.less";
 @import "../../styles/grid.less";
+@import "../../styles/global.less";
 
 img {
   max-width: 100%;
@@ -8,7 +9,7 @@ img {
 }
 
 .home {
-  padding: 50px 10px;
+  padding: 50px 10px 0 10px;
   font-family: "Plus Jakarta Sans";
   max-width: auto;
 
@@ -35,6 +36,18 @@ img {
 
   ul li {
     margin-bottom: 20px;
+  }
+
+  .bg-gradient {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/images/home16.png");
+    border-radius: 65px;
+    > img {
+      padding: 30px;
+      border-radius: 50px;
+    }
+    flex-direction: column;
   }
 }
 
@@ -90,18 +103,65 @@ img {
 
 @media (min-width: 1250px) {
   .title {
-    font-size: 3rem;
+    font-size: 64px;
+    line-height: 130%;
     margin-left: 30px;
     font-family: "Syne";
   }
 
   .home {
-    padding: 70px 220px;
+    padding: 70px 220px 0 220px;
     font-family: "Plus Jakarta Sans";
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: auto;
+    font-size: 20px;
+    line-height: 160%;
+
+    @media (min-width: 1250px) {
+      .title {
+        font-size: 64px;
+        line-height: 130%;
+        margin-left: 30px;
+        font-family: "Syne";
+      }
+
+      .home {
+        padding: 70px 220px 0 220px;
+        font-family: "Plus Jakarta Sans";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: auto;
+        font-size: 20px;
+        line-height: 160%;
+      }
+
+      .wrapper {
+        width: 1024px;
+      }
+
+      .bg-gradient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/images/home16.png");
+        border-radius: 20px;
+        flex-direction: row;
+        > img {
+          padding: 30px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    width: 1024px;
   }
 }

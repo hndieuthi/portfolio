@@ -10,13 +10,13 @@ import { FloristComponent } from './florist/florist.component';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'projects',
     pathMatch: 'prefix',
   },
   {
-    path: 'home',
+    path: 'zalo-chat',
     component: HomeComponent,
-    title: 'Home',
+    title: 'Zalo Chat',
   },
   {
     path: 'about-me',

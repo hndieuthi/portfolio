@@ -1,6 +1,7 @@
 @import "../../styles/bootstrap.less";
 @import "../../styles/color.less";
 @import "../../styles/grid.less";
+@import "../../styles/global.less";
 
 img {
   max-width: 100%;
@@ -161,23 +162,41 @@ img {
   background-color: @GR_white;
   padding: 40px;
   border-radius: 20px;
-  height: 300px;
+  height: fit-content;
+}
+
+.full-width {
+  width: 100%;
 }
 
 @media (min-width: 1250px) {
   .title {
-    font-size: 3rem;
+    font-size: 64px;
+    line-height: 130%;
     margin-left: 30px;
     font-family: "Syne";
   }
 
   .regreen {
-    padding: 70px 220px;
+    padding: 70px 220px 120px 220px;
     font-family: "Plus Jakarta Sans";
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     max-width: auto;
+    font-size: 20px;
+    line-height: 160%;
+
+    .bg-white-wrapper {
+      background-color: @GR_white;
+      padding: 40px;
+      border-radius: 20px;
+      height: 480px;
+    }
+  }
+
+  .wrapper {
+    width: 1024px;
   }
 }
