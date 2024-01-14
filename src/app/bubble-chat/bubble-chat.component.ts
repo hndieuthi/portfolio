@@ -1,6 +1,6 @@
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import {
   aosImageDuration,
   aosImageOffset,
@@ -19,7 +19,10 @@ import { SeeNextProjectComponent } from '../see-next-project/see-next-project.co
 export class BubbleChatComponent {
   public imagePath = imagePath;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private router: Router
+  ) {}
 
   public ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -28,5 +31,12 @@ export class BubbleChatComponent {
         offset: aosImageOffset,
       });
     }
+
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 }
