@@ -42,7 +42,7 @@ img {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.1em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 3s steps(60, end), blink-caret 0.75s step-end infinite;
     max-width: max-content;
   }
 
@@ -52,7 +52,7 @@ img {
     border-radius: 40px;
     height: fit-content;
     padding: 15px;
-    min-width: 220px;
+    min-width: 150px;
   }
 
   /* The typing effect */
@@ -125,12 +125,16 @@ img {
         padding: 0 0 50px 0;
       }
     }
+
+    .title {
+      font-size: 3rem;
+    }
   }
 }
 
 .title {
   font-family: "Syne";
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .flex {
@@ -148,4 +152,20 @@ img {
 
 .column {
   flex-direction: column;
+}
+
+@media (min-width: 1250px) {
+  .title {
+    font-size: 3rem;
+    font-family: "Syne";
+  }
+
+  .typing-box {
+    margin-left: 10px;
+    background-color: @GR_olive;
+    border-radius: 40px;
+    height: fit-content;
+    padding: 15px;
+    min-width: 220px;
+  }
 }
