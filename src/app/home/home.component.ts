@@ -25,6 +25,8 @@ import { ShareService } from '../shared/share.service';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   public imagePath = imagePath;
+  public outZaloChat3 =
+    'https://lh3.googleusercontent.com/d/1u7o-JPxo3Unu4aBJXU6lLsRD-KDCGpm0';
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,

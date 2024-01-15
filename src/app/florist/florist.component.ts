@@ -18,6 +18,8 @@ import { SeeNextProjectComponent } from '../see-next-project/see-next-project.co
 })
 export class FloristComponent {
   public imagePath = imagePath;
+  public outflorist8 =
+    'https://lh3.googleusercontent.com/d/1ldZRFfBnSfjkL2uvJCJoFWaEKVnO8DW9';
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
