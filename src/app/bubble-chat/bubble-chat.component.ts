@@ -26,17 +26,8 @@ export class BubbleChatComponent {
 
   public ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      AOS.init({
-        duration: aosImageDuration,
-        offset: aosImageOffset,
-      });
-    }
-
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
+      AOS.init({});
       window.scrollTo(0, 0);
-    });
+    }
   }
 }

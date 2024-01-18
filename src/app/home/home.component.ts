@@ -40,6 +40,7 @@ export class HomeComponent implements OnInit, OnDestroy {
         offset: aosImageOffset,
       });
     }
+    window.scrollTo(0, 0);
   }
 
   public ngOnDestroy(): void {

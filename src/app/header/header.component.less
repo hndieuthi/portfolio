@@ -2,18 +2,21 @@
 @import "../../styles/color.less";
 
 .header {
-  font-size: 24px;
+  font-size: 16px;
   font-family: "Plus Jakarta Sans";
-  padding: 10px 40px;
+  margin: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .name {
     color: @VE_green;
     cursor: pointer;
+    font-size: 24px;
   }
 
   .items {
+    display: flex;
     > * {
       cursor: pointer;
     }
@@ -25,11 +28,11 @@
 }
 
 @media (min-width: 1250px) {
-  .bold {
-    font-weight: 100;
+  .header {
+    margin: 0 350px;
   }
 
-  .header {
-    padding: 10px 100px;
+  .bold {
+    font-weight: 100;
   }
 }

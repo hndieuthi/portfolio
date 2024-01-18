@@ -44,12 +44,15 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         duration: aosImageDuration,
         offset: aosImageOffset,
       });
+      window.scrollTo(0, 0);
     }
     this.shareService.activeUrl$.next('projects');
   }
 
   public ngAfterViewInit(): void {
-    this.showTypingTexts();
+    if (isPlatformBrowser(this.platformId)) {
+      this.showTypingTexts();
+    }
   }
 
   public ngOnDestroy(): void {

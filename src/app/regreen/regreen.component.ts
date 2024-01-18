@@ -1,4 +1,4 @@
-import { Component, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, NgZone, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import {
@@ -30,13 +30,7 @@ export class RegreenComponent {
         duration: aosImageDuration,
         offset: aosImageOffset,
       });
-    }
-
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
       window.scrollTo(0, 0);
-    });
+    }
   }
 }

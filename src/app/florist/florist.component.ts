@@ -32,6 +32,7 @@ export class FloristComponent {
         duration: aosImageDuration,
         offset: aosImageOffset,
       });
+      window.scrollTo(0, 0);
     }
 
     this.router.events.subscribe((evt) => {

@@ -1,14 +1,16 @@
-<div class="projects">
+<div data-aos="fade-right" class="projects">
   <div class="header">
     <div *ngIf="visible" class="header-wrapper align-center">
       <div class="title">Design for</div>
       <div class="typing-box title">
-        <div class="typing-effect"><span class="tw" #tw> </span></div>
+        <div class="typing-effect">
+          <span class="tw" #tw> </span>
+        </div>
       </div>
     </div>
     <br />
     <br />
-    <div data-aos="fade-right" class="introduction">
+    <div data-aos="fade-left" class="introduction">
       I am <b>Thi Ho</b>, a product designer who is constantly <br />
       seeking out great challenges, bridging the <br />
       gap between technology and humans
@@ -22,12 +24,7 @@
           <img src="{{ imagePath }}/projects1.png" data-aos="fade-up" />
         </div>
         <div class="item cursor-pointer">
-          <a
-            href="https://www.behance.net/gallery/141661135/Prudential-Banca-Web-Game-Design"
-            target="_blank"
-          >
-            <img src="{{ imagePath }}/projects2.png" data-aos="fade-up"
-          /></a>
+          <img src="{{ imagePath }}/projects2.png" data-aos="fade-up" />
         </div>
       </div>
       <div>
@@ -51,7 +48,7 @@
       <div class="mt-100">
         <div class="item">
           <a
-            href="https://www.behance.net/gallery/137813957/Downy-French-Lavender-Diptyque-CGI-Video"
+            routerLink="https://www.behance.net/gallery/137813957/Downy-French-Lavender-Diptyque-CGI-Video"
             target="_blank"
           >
             <img src="{{ imagePath }}/projects6.png" data-aos="fade-up" />
@@ -59,25 +56,33 @@
         </div>
         <br />
         <div class="item">
-          <img src="{{ imagePath }}/projects8.png" data-aos="fade-up" />
+          <a [routerLink]="['/florist']">
+            <img src="{{ imagePath }}/projects8.png" data-aos="fade-up"
+          /></a>
         </div>
       </div>
       <div class="mt-50">
         <div class="item">
           <a
-            href="https://www.behance.net/gallery/140724035/Mirinda-TVC-2022-x-Soobin-Pass-the-drop"
+            routerLink="https://www.behance.net/gallery/140724035/Mirinda-TVC-2022-x-Soobin-Pass-the-drop"
             target="_blank"
             ><img src="{{ imagePath }}/projects7.png" data-aos="fade-up"
           /></a>
         </div>
         <br />
-        <div class="item">
+        <div class="item" data-aos="fade-up">
           <a
-            href="https://www.behance.net/gallery/137153351/Greenfeed-Animation-Video-OKR-Explainer"
+            routerLink="https://www.behance.net/gallery/137153351/Greenfeed-Animation-Video-OKR-Explainer"
             target="_blank"
           >
-            <img src="{{ imagePath }}/projects9.png" data-aos="fade-up"
+            <img
+              height="560"
+              width="565"
+              src="{{ imagePath }}/project2.gif"
+              class="project2-gif"
           /></a>
+          <div class="small-img-title">UI Design / 2022</div>
+          <div class="big-img-title">Greenfeed Animation Video | OKR</div>
         </div>
         <br />
         <div class="item">
