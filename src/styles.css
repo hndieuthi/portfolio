@@ -46,13 +46,13 @@
 
 @keyframes slide-from-right {
   from {
-    transform: translateX(100px);
+    transform: translateX(1000px);
   }
 }
 
-@keyframes slide-to-left {
+@keyframes slide-to-right {
   to {
-    transform: translateX(-800px);
+    transform: translateX(1500px);
   }
 }
 
@@ -67,11 +67,11 @@
 } */
 
 ::view-transition-new(root) {
-  animation: 300ms cubic-bezier(0, 0, 0.2, 1) both fade-in,
-    300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+  animation: 600ms cubic-bezier(0, 0, 0.2, 1) both fade-in,
+    800ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 }
 
 ::view-transition-old(root) {
-  animation: 150ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-    300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-right;
+  animation: 600ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+    800ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-right;
 }

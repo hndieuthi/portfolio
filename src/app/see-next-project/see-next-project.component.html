@@ -11,5 +11,17 @@
   <br />
   <p class="sub-content">{{ subContent }}</p>
   <br />
-  <b class="large-text dark-green">{{ content }}</b>
+  <div class="large-text dark-green semi-bold">
+    {{ content }}
+    <a
+      *ngIf="linkedTo"
+      class="project-name"
+      target="_blank"
+      [href]="linkedTo"
+      >{{ projectName }}</a
+    >
+    <span *ngIf="!linkedTo" class="project-name" [routerLink]="redirectTo">{{
+      projectName
+    }}</span>
+  </div>
 </div>

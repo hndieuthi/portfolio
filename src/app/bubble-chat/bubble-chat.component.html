@@ -1,10 +1,10 @@
+<div class="head-img bg-blue flex center">
+  <img src="{{ imagePath }}/bubble-chat1.png" />
+</div>
 <div class="bubble-chat flex center column">
-  <div class="flex center">
-    <img src="{{ imagePath }}/bubble-chat1.png" />
-  </div>
   <div class="wrapper flex center column">
     <div>
-      <div class="project-overview mt-320">
+      <div class="project-overview mt-240">
         <div class="flex align-center">
           <span>
             <img
@@ -13,7 +13,7 @@
               src="{{ imagePath }}/rectangle179.png"
             />
           </span>
-          <span class="title">Project overview</span>
+          <span class="h2 ml-30 font-syne">Project overview</span>
         </div>
         <p class="mt-40">
           Voice message in Zalo has increased significantly in recent years.
@@ -24,18 +24,18 @@
         <br />
         <br />
         <div class="grid">
-          <div class="g-col-12 g-col-md-4">
+          <div class="g-col-12 g-col-md-4 p-10">
             <div class="header1">TIMELINE</div>
             <p>December 2023. Plan to release in February 2023</p>
           </div>
-          <div class="g-col-12 g-col-md-4">
+          <div class="g-col-12 g-col-md-4 p-10 img-ml">
             <div class="header1">THE TEAM</div>
             <p>
               1 product owner, 1 UX/UI designer, 1 UX writer and teams of
               developers and QC
             </p>
           </div>
-          <div class="g-col-12 g-col-md-4">
+          <div class="g-col-12 g-col-md-4 p-10">
             <div class="header1">WHAT I DID</div>
             <p>
               Research, wireframe, hi-fi prototype, user testing, final product
@@ -54,18 +54,19 @@
               src="{{ imagePath }}/rectangle179.png"
             />
           </span>
-          <span class="title">Research</span>
+          <span class="h2 ml-30 font-syne">Research</span>
         </div>
-        <h2 class="mt-50 h3">
+        <div class="mt-50 h3 semi-bold">
           Voice bubble currently lacks basic playback function, and additional
           features are hard to find.
-        </h2>
+        </div>
         <p>
           We conducted user interviews and examine user feedback channel to find
           out users needs and pain points related to the existing voice bubble
           chat. There are numerous complaints from our users pertain to the
           inconvenience of receiving voice messages.
         </p>
+        <div class="mt-80"></div>
         <div class="flex center column">
           <div class="bg-orange flex center">
             <img src="{{ imagePath }}/emoji1.png" />
@@ -98,7 +99,7 @@
             >
           </div>
         </div>
-        <h2 class="mt-70 h3">Insights from data analysis</h2>
+        <h2 class="mt-70 h3 semi-bold">Insights from data analysis</h2>
         <div class="grid">
           <div class="g-col-12 g-col-md-3">
             <img src="{{ imagePath }}/bubble-chat3.png" />
@@ -158,7 +159,7 @@
       <span>
         <img width="64" height="32" src="{{ imagePath }}/rectangle178.png" />
       </span>
-      <span class="title">Framing the problem</span>
+      <span class="h2 ml-30 font-syne">Framing the problem</span>
     </div>
     <p class="mt-50">
       The challenge we face is that the current design has been used for a long
@@ -203,25 +204,26 @@
         <span>
           <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
         </span>
-        <span class="title">Iteration for phase 1</span>
+        <span class="h2 ml-30 font-syne">Iteration for phase 1</span>
       </div>
       <h2 class="mt-40 h3">
         Two main criteria are identified to guide the direction of solution
         exploration
       </h2>
       <div class="grid">
-        <div class="g-col-12 g-col-md-6">
+        <div class="g-col-12 g-col-md-6 pr-40">
           <img src="{{ imagePath }}/bubble-chat8.png" />
-          <h3 class="header1">Prioritizing user convenience</h3>
+          <div class="h4">Prioritizing user convenience</div>
           <p>
             The new design should address common issues users face when
             receiving voice messages, especially when they are multitasking or
             at inconvenient times.
           </p>
         </div>
+
         <div class="g-col-12 g-col-md-6">
           <img src="{{ imagePath }}/bubble-chat9.png" />
-          <h3 class="header1">Accessibility</h3>
+          <div class="h4">Accessibility</div>
           <p>
             Given that voice recording is also widely used by senior users, it
             is important to design a voice message bubble that is clear and
@@ -230,15 +232,15 @@
         </div>
       </div>
       <br />
-      <h2 class="h3">Wireframes and Prototypes</h2>
+      <div class="h3 semi-bold">Wireframes and Prototypes</div>
       <p class="mb-10">
         I created wireframes and multiple versions of the voice bubble chat,
         keeping scalability in mind. There are several factors to consider, such
         as the
-        <b
-          >design of the waveform, the organization of button hierarchy,
-          scalability, interaction design, and accessibility.</b
-        >
+        <span class="semi-bold">
+          design of the waveform, the organization of button hierarchy,
+          scalability, interaction design, and accessibility.
+        </span>
       </p>
       <br />
       <img src="{{ imagePath }}/bubble-chat10.png" />
@@ -248,9 +250,9 @@
         <span>
           <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
         </span>
-        <span class="title">Final solution</span>
+        <span class="h2 ml-30 font-syne">Final solution</span>
       </div>
-      <h2 class="mt-80 h3 blue-main">1. Basic features</h2>
+      <h2 class="mt-80 h3 semi-bold blue-main">1. Basic features</h2>
       <div class="grid center">
         <div class="g-col-12 g-col-md-6">
           <img src="{{ imagePath }}/bubble-chat11.png" />
@@ -299,7 +301,7 @@
           </p>
         </div>
       </div>
-      <h2 class="blue-main mt-80 h3 mb-10">2. Voice to text</h2>
+      <h2 class="blue-main mt-80 h3 semi-bold mb-10">2. Voice to text</h2>
       <p>
         Text transcription (voice-to-text) is placed directly in the chat bubble
         for three reasons:
@@ -326,7 +328,7 @@
         decision also helps maintain the privacy characteristic of a voice
         message.
       </p>
-      <h2 class="blue-main mt-80 h3 mb-10">3. Scalability</h2>
+      <div class="blue-main mt-80 h3 semi-bold mb-10">3. Scalability</div>
       <p>
         Including all add-on features in the bubble chat is not recommended as
         it increases users' cognitive load and the available space within the
@@ -334,26 +336,27 @@
       </p>
       <ul>
         <li>
-          <b>Option 1: </b>Redesign the context menu to incorporate additional
-          voice features.
+          <span class="semi-bold">Option 1: </span>Redesign the context menu to
+          incorporate additional voice features.
         </li>
         <li>
-          <b>Option 2: </b> Integrate a media player within the conversation
-          screen.
+          <span class="semi-bold">Option 2: </span> Integrate a media player
+          within the conversation screen.
         </li>
       </ul>
-      <h2 class="mt-30 h3">
+      <div class="mt-40 h3 semi-bold">
         Using a media player is preferred for settings that influence all voice
         bubbles like speed and in-ear mode.
-      </h2>
+      </div>
       <p>
-        <b class="blue-main"
-          >Users tend to send multiple voice messages at once.</b
+        <span class="blue-main semi-bold"
+          >Users tend to send multiple voice messages at once.</span
         >Therefore, advanced features that has influence on all of the bubble
         chat in the conversation should be placed in a media player for better
         control, rather than incorporating these features into each voice
         bubble.
       </p>
+      <div class="mt-40"></div>
       <img src="{{ imagePath }}/bubble-chat14.png" />
       <br />
       <br />
@@ -364,20 +367,21 @@
       </p>
       <ul>
         <li>
-          <b>1. Basic settins:</b> This zone includes the basic features that
-          are commonly used the most. It also includes any feature that can only
-          be interacted with inside the bubble chat.
+          <span class="semi-bold">1. Basic settings:</span> This zone includes
+          the basic features that are commonly used the most. It also includes
+          any feature that can only be interacted with inside the bubble chat.
         </li>
         <li>
-          <b>Global settings </b> (Media player): This zone includes additional
-          features that influences all voice chat
+          <span class="semi-bold">2. Global settings </span> (Media player):
+          This zone includes additional features that influences all voice chat
         </li>
       </ul>
     </div>
   </div>
 </div>
 <app-see-next-project
-  content="Enhancing chat experience with reactions"
+  content="Enhancing chat experience with "
   subContent="UI design/2022"
-  redirectTo="/regreen"
+  redirectTo="/zalo-chat"
+  projectName="reactions"
 ></app-see-next-project>

@@ -1,6 +1,6 @@
-import { Component, Inject, NgZone, PLATFORM_ID } from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { NavigationEnd, Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import {
   aosImageDuration,
   aosImageOffset,
@@ -19,10 +19,7 @@ import { SeeNextProjectComponent } from '../see-next-project/see-next-project.co
 export class RegreenComponent {
   public imagePath = imagePath;
 
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: Object,
-    private router: Router
-  ) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   public ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {

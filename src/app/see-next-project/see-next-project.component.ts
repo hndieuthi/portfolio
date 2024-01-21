@@ -19,6 +19,8 @@ export class SeeNextProjectComponent {
   @Input() content = '';
   @Input() subContent = '';
   @Input() redirectTo = '';
+  @Input() projectName = '';
+  @Input() linkedTo = '';
   public imagePath = imagePath;
   public test = '/zalo-connect';
 
