@@ -1,36 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* Add application styles & imports to this file! */
-/* @keyframes entrance {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+* {
+  -webkit-font-smoothing: antialiased;
 }
-
-@keyframes exit {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-}
-
-::view-transition-old(root) {
-  animation: exit 1s ease 0s 1 normal backwards;
-}
-
-::view-transition-new(root) {
-  animation: entrance 1s ease 0s 1 normal backwards;
-} */
 
 @keyframes fade-in {
   from {
@@ -55,16 +27,6 @@
     transform: translateX(1500px);
   }
 }
-
-/* ::view-transition-old(root) {
-  animation: 1s cubic-bezier(0.4, 0, 1, 1) both fade-out,
-    300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
-}
-
-::view-transition-new(root) {
-  animation: 1s cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-    300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-} */
 
 ::view-transition-new(root) {
   animation: 600ms cubic-bezier(0, 0, 0.2, 1) both fade-in,
