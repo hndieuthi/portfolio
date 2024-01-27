@@ -14,7 +14,7 @@ img {
   max-width: auto;
 
   .wrapper {
-    max-width: 70%;
+    width: 70%;
   }
 
   .grey {
@@ -103,6 +103,12 @@ img {
     width: 40px;
     transform: translate(-50px, 40px);
   }
+
+  @media (min-width: 1250px) {
+    .wrapper {
+      width: 1024px;
+    }
+  }
 }
 
 .personas {
@@ -160,9 +166,10 @@ img {
 
 .bg-white-wrapper {
   background-color: @GR_white;
-  padding: 40px;
+  padding: 45px 45px 45px 45px;
   border-radius: 20px;
-  height: fit-content;
+  height: 95%;
+  margin-right: 10px;
 }
 
 .full-width {
@@ -171,12 +178,6 @@ img {
 
 .bg-orange {
   background-color: @light_orange1;
-}
-
-.test {
-  img {
-    padding-right: 5px;
-  }
 }
 
 .sg {
@@ -212,7 +213,11 @@ img {
   margin-left: 35px;
 }
 
-@media (min-width: 1250px) {
+.bg-white-block {
+  display: block;
+}
+
+@media (min-width: 1250px) and (max-width: 1549px) {
   .title {
     font-size: 64px;
     line-height: 130%;
@@ -230,16 +235,31 @@ img {
     max-width: auto;
     font-size: 20px;
     line-height: 160%;
-
-    .bg-white-wrapper {
-      background-color: @GR_white;
-      padding: 40px;
-      border-radius: 20px;
-      height: 480px;
-    }
   }
 
   .wrapper {
     width: 1024px;
+  }
+
+  .bg-white-wrapper {
+    background-color: @GR_white;
+    padding: 45px 45px 45px 45px;
+    border-radius: 20px;
+    height: 95%;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1550px) {
+  .bg-white-block {
+    display: grid;
+  }
+
+  .bg-white-wrapper {
+    background-color: @GR_white;
+    padding: 45px 45px 0 45px;
+    border-radius: 20px;
+    height: 95%;
+    margin-right: 10px;
   }
 }

@@ -14,7 +14,7 @@ img {
   max-width: auto;
 
   .wrapper {
-    max-width: 70%;
+    width: 70%;
   }
 
   .blue-main {
@@ -48,6 +48,12 @@ img {
       border-radius: 50px;
     }
     flex-direction: column;
+  }
+
+  @media (min-width: 1250px) {
+    .wrapper {
+      width: 1024px;
+    }
   }
 }
 
@@ -179,10 +185,6 @@ img {
         }
       }
     }
-  }
-
-  .wrapper {
-    width: 1024px;
   }
 
   .wrapper2 {

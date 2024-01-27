@@ -10,6 +10,7 @@ img {
   padding: 0 80px;
   margin: 200px auto 140px auto;
   font-family: "Plus Jakarta Sans";
+  width: 70%;
   max-width: max-content;
 
   .wrapper1 {
@@ -89,15 +90,21 @@ img {
   font-size: 2rem;
   padding: 80px;
 
-  .mt-100 {
+  .black-wrapper {
+    width: 70%;
+  }
+
+  .top-100 {
     > .item {
       padding: 0 20px 20px 0;
+      width: 100%;
     }
   }
 
-  .mt-50 {
+  .top-50 {
     > .item {
       padding: 0 0 20px 0;
+      width: 100%;
     }
   }
 
@@ -122,15 +129,18 @@ img {
       display: flex;
     }
 
-    .mt-100 {
+    .top-100 {
+      margin-top: 200px;
       > .item {
-        padding: 0 50px 50px 0;
+        padding: 0 50px 100px 0;
+        width: 560px;
       }
     }
 
-    .mt-50 {
+    .top-50 {
       > .item {
-        padding: 0 0 50px 0;
+        padding: 0 0 100px 0;
+        width: 560px;
       }
     }
   }
@@ -174,7 +184,7 @@ img {
 .small-img-title {
   margin-top: 10px;
   color: @GR_white;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 150%;
   font-family: "Plus Jakarta Sans";
   font-weight: 100;
@@ -184,6 +194,7 @@ img {
   margin-top: 10px;
   color: @GR_white;
   font-family: "Plus Jakarta Sans";
+  font-size: 20px;
 }
 
 .round-border {
@@ -194,7 +205,15 @@ img {
   color: @GR_darkgreen;
 }
 
-@media (min-width: 1250px) {
+.header {
+  height: 90vh;
+}
+
+.neongreen {
+  color: @GR_neongreen;
+}
+
+@media screen and (min-width: 1250px) {
   .title {
     font-size: 112px;
     font-family: "Syne";
@@ -210,13 +229,36 @@ img {
   }
 
   .header {
-    height: 70vh;
-    margin-left: 10px;
+    height: 100%;
+    margin-bottom: 200px;
+  }
+
+  .big-img-title {
+    margin-top: 10px;
+    color: @GR_white;
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    line-height: 170%;
+    font-weight: 500;
+  }
+
+  .small-img-title {
+    margin-top: 10px;
+    color: @GR_white;
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 100;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header-wrapper {
     display: flex;
+  }
+
+  .title {
+    font-size: 90px;
+    font-family: "Syne";
   }
 }

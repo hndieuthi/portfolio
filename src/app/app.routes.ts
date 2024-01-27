@@ -9,7 +9,7 @@ import { FloristComponent } from './florist/florist.component';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: '*',
     redirectTo: 'projects',
     pathMatch: 'prefix',
   },
@@ -48,5 +48,5 @@ export const routes: Routes = [
     component: FloristComponent,
     title: 'Florist',
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: 'projects' },
 ];
