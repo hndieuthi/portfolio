@@ -88,8 +88,11 @@ img {
 .black {
   background-color: @GR_darkgreen_2;
   font-size: 2rem;
-  padding: 80px;
-
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .black-wrapper {
+    max-width: 70%;
+  }
   .top-100 {
     > .item {
       // padding: 0 20px 20px 0;
@@ -121,20 +124,20 @@ img {
   }
 
   @media (min-width: 1250px) {
-    .wrapper1{
+    .wrapper1 {
       display: flex;
     }
 
     .top-100 {
       > .item {
-        // padding: 0 50px 100px 0;
+        padding: 0 40px 100px 0;
         // width: 560px;
       }
     }
 
     .top-50 {
       > .item {
-        // padding: 0 0 100px 0;
+        padding: 0 0 100px 0;
         // width: 560px;
       }
     }
@@ -190,6 +193,7 @@ img {
   color: @GR_white;
   font-family: "Plus Jakarta Sans";
   font-size: 20px;
+  max-width: 600px;
 }
 
 .round-border {
@@ -256,4 +260,8 @@ img {
     font-size: 90px;
     font-family: "Syne";
   }
+}
+
+.mb-30 {
+  margin-bottom: 50px;
 }
