@@ -2,10 +2,16 @@
 
 .footer {
   background-color: @GR_darkgreen;
-  height: 300px;
   padding: 130px 85px;
   color: @GR_white;
   font-family: "Plus Jakarta Sans";
+  display: inline-block;
+  width: 100%;
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
 
   .small-title {
     line-height: 160%;
