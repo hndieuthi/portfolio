@@ -7,5 +7,7 @@ import { Subject } from 'rxjs';
 export class ShareService implements OnDestroy {
   public activeUrl$ = new Subject<string>();
 
-  public ngOnDestroy(): void {}
+  public ngOnDestroy(): void {
+    this.activeUrl$.unsubscribe();
+  }
 }
